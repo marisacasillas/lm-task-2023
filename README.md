@@ -1,7 +1,7 @@
 # technical task for lab manager applicants (2023)
 
 
-This repository contains instructions for two short tasks to complete by **DEADLINE**. These tasks were chosen because they are representative samples of the kinds of things our lab manager does.
+This repository contains instructions for two short tasks to complete by the end of the day on May 23rd, 2023. These tasks were chosen because they are representative samples of the kinds of things our lab manager does.
 
 I'm hoping that this will take 1–3 hours of your time in total, depending on how experienced you are with these kinds of tasks and how determined you are to double check your work and/or add extra bells and whistles.
 
