@@ -54,7 +54,7 @@ _Why this level?_ Everyone can use this tool, no matter their experience with pr
 
 ### background
 
-We are currently embarking on two projects that will involve large quantities of audio/video transcription, primarily in English. We have a long training process with very specific conventions for things like what to transcribe and what to ignore, how to use contractions like "wanna", how to indicate things like laughter and crying, and so on. But that's WAY too much for your current ask. Right now I would only like to get a preliminary impression of how you would use ELAN to generate a simple transcript.
+We are currently embarking on two projects that will involve large quantities of audio/video transcription (e.g., [this one](https://neubauercollegium.uchicago.edu/research/roots-of-linguistic-identity) and [this one](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238609&HistoricalAwards=false)). We have a long training process with very specific conventions for things like what to transcribe and what to ignore, how to use contractions like "wanna", how to indicate things like laughter and crying, and so on. But that's WAY too much for your current ask. Right now I would only like to get a preliminary impression of how you would use ELAN to generate a simple transcript.
 
 While we have existing workflows for setting up transcription documents and completing transcription, an important part of the lab manager's job is experimenting with and then documenting best ways to adapt those workflows for new projects. For example, you might take the instructions and training materials from the [ACLEW project](https://osf.io/b2jep/wiki/home/) and create a minimal version for a student to use on a specific pilot dataset they will work on. So imagine this as a moment when you're experimenting with a best way to do transcription for a new project.
 
@@ -66,7 +66,7 @@ For the purposes of this task, I want to you imagine that we're going to create 
 
 * Download [this daylong audio file](https://media.talkbank.org/homebank/Public/FauseyTrio-Public/G448/G448_001100.wav) from HomeBank.
   * (!) Please note that there is more than one child in this recording, and also in the clips I will highlight below.
-* Create a new ELAN file and atatch the daylong audio as linked media.
+* Create a new ELAN file and attach the daylong audio as linked media.
 * Rename the default tier as `coded_region` and create two annotations on that tier, each 30 seconds long, starting at:
   * `06:58:30.349` 
   * `07:10:00.000`
@@ -80,19 +80,22 @@ A satisfaction solution is an ELAN file that has, minimally, one tier for each s
 * Use conventional US English spellings
 * Sometimes it's unclear whether an utterance should be lumped together over a silence or, instead, split into multiple pieces. Whatever you do, do it systematically
 * Feel free to use an indicator for unintelligible speech, either at the word level or at the whole utterance level
-* When I play each utterance annotation individually, I shouldn't hear silence preceding/following the transcribed speech for that annotation
-* Similarly, when I play each utterance annotation it shouldn't cut off parts of the transcribed speech for that annotation—in a nutshell, make your onset and offset boundaries reasonably accurate
+* Make your onset and offset boundaries reasonably accurate:
+  * When I play each of your utterance annotations individually, I shouldn't hear silence preceding/following the transcribed speech for that annotation
+  * When I play each of your utterance annotations there shouldn't be cut off parts of the transcribed speech at the start or end 
 * Nonlinguistic infant vocalizations can be transcribed as "0."
+* It's up to you whether you want to transcribe other nonlinguistic, yet communicative behaviors, such as laughter
 * Feel free to add further tiers as desired (e.g., comments, addressee, etc.)
+* Generally, high systematicity is valued over high detail, but transcriptions with _both_ features are ideal
 
 
 #### reach goal: transcription + proposed coding scheme
 
-A reach solution is the ELAN file above, accompanied by a README file (e.g., .md or .doc) that documents your systematic approach to transcription. You would, for example, create this document _after_ you have experimented a little and decided on a best approach to transcription. Its purpose is to guide an imagined undergraduate research assistant on how to use your approach with new audio clips. So imagine that this person would read your document and then start to transcribe other clips from other recordings just on the basis of what you have written. Some tips:
+A reach solution is the ELAN file above, accompanied by a README file (e.g., .md > .doc, but both are acceptable) that documents your systematic approach to transcription. You would, for example, create this document _after_ you have experimented a little and decided on a best approach to transcription. Its purpose is to guide an imagined undergraduate research assistant on how to use your transcription strategy with new audio clips. You want them to be able to replicate what you would do, as closely as possible. So imagine that this person would read your document and then start to transcribe other clips from other recordings just on the basis of what you have written. What would you write to get them to closely produce what you would have yourself produced? Some tips:
 
-* Use concrete examples
+* Use concrete examples whenever relevant
 * It's typically useful to try and anticipate common errors/misunderstandings
-* It's good to provide supplemental resources (e.g., dictionary links/other documents/start-up instructions) as needed
+* It's good to provide supplemental resources (e.g., screen shots/animated gifs/audio clips/dictionary links/other documents/start-up instructions) as needed
 
-This is a very free task, so if you're going for the reach goal here, I'll mostly be looking at what you find interesting/how you engage with it and how clear your document is for a typical RA in our lab.
+This is a very freeform task. I'll mostly be looking at what you find interesting/how you engage with it and how clear your document is for a typical RA in our lab.
 
