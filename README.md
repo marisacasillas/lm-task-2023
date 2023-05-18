@@ -5,7 +5,7 @@ This repository contains instructions for two short tasks to complete by **DEADL
 
 I'm hoping that this will take 1–3 hours of your time in total, depending on how experienced you are with these kinds of tasks and how determined you are to double check your work and/or add extra bells and whistles.
 
-The purpose of these tasks is for me to get a sense of where your strengths are when it comes to data-centered tasks. Equally important these tasks should also give you a glimpse into the kinds of data-centered tasks that our lab manager leads.
+The purpose of these tasks is for me to get a sense of where your strengths are when it comes to data-centered tasks. Equally important, these tasks should also give you a glimpse into the kinds of data-centered tasks that our lab manager leads.
 
 Each task is described below. For each there is a "satisfaction" goal and a "reach" goal. It's perfectly fine to set your aims on the satisfaction goal!
 
@@ -33,20 +33,20 @@ A satisfaction solution is a single/set of R scripts and a README for which:
 
 * I can run the code to load your function(s)
 * I can identify the name of your conversion function(s) and how to use them (commented code is useful!)
-* I can call your function and give it, as an argument, a time in one of the two format types to get the desired output, e.g., `convert_time_chatter(06:13:10.459)` should give `> 22390.459`
-* The given outputs are correct
+* I can call your function(s) and give it/them, as an argument, a time in one of the two format types to get the desired output, e.g., `convert_time_chatter(06:13:10.459)` should give `22390.459`
+* The given outputs are correct (rounded to three digits in the case of milliseconds)
 
 _Why this goal level?_ Students and RAs in the lab who are just learning how to script are likely doing so in R, particularly in RStudio. Even if they're just beginning, they will probably know (or can be taught) how to open, minorly edit, and run individual scripts, and so would probably be able to use a tool like this independently after a little initial instruction.
 
 #### reach goal
 
-A reach solution is an Shiny app for which:
+A reach solution is a Shiny app for which:
 
 * I can visit the webpage to load your code
-* It identify where and how to enter the input time in order to ask the webpage for a conversion (e.g., by entering `06:13:10.459` or `22390.459`)
+* I can identify where and how to enter the input time in order to ask the webpage for a conversion (e.g., by entering `06:13:10.459` or `22390.459`)
 * The given outputs are correct
 
-If you haven't encountered a [Shiny app](https://www.shinyapps.io/) before, here's an example: [https://aclew.shinyapps.io/schober\_clark\_replication/](https://aclew.shinyapps.io/schober_clark_replication/) This webpage allows users to upload an ELAN file and then it checks the file for a variety of different error types and reports the results of the check to the uploader. Underlyingly, it is run by a set of R scripts that we keep [here](https://github.com/marisacasillas/chatterlab/tree/gh-pages/content/courses/HLI2022/schober_clark_replication) (the primary .eaf checker code is in `check-eaf.R` and the webpage interface code is in `app.R`). If you do this solution I recommend developing the code in RStudio, which makes it easy to set up the connection to Shiny. If you don't already have one, you can sign up for a free Shiny account [here](https://www.shinyapps.io/auth/oauth/signup).
+If you haven't encountered a [Shiny app](https://www.shinyapps.io/) before, here's an example: [https://aclew.shinyapps.io/schober\_clark\_replication/](https://aclew.shinyapps.io/schober_clark_replication/). This webpage allows users to upload an ELAN file and then it checks the file for a variety of different error types and reports the results of the check to the uploader. Underlyingly, it is run by a set of R scripts that we keep [here](https://github.com/marisacasillas/chatterlab/tree/gh-pages/content/courses/HLI2022/schober_clark_replication) (the primary .eaf checker code is in `check-eaf.R` and the webpage interface code is in `app.R`). If you do this solution I recommend developing the code in RStudio, which makes it easy to set up the connection to Shiny. If you don't already have one, you can sign up for a free Shiny account [here](https://www.shinyapps.io/auth/oauth/signup).
 
 _Why this level?_ Everyone can use this tool, no matter their experience with programming, which makes it incredibly useful.
 
@@ -54,7 +54,7 @@ _Why this level?_ Everyone can use this tool, no matter their experience with pr
 
 ### background
 
-We are currently embarking on two projects that will involve large quantities of audio/video transcription (e.g., [this one](https://neubauercollegium.uchicago.edu/research/roots-of-linguistic-identity) and [this one](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238609&HistoricalAwards=false)). We have a long training process with very specific conventions for things like what to transcribe and what to ignore, how to use contractions like "wanna", how to indicate things like laughter and crying, and so on. But that's WAY too much for your current ask. Right now I would only like to get a preliminary impression of how you would use ELAN to generate a simple transcript.
+We are currently embarking on two projects that will involve large quantities of audio/video transcription (e.g., [this one](https://neubauercollegium.uchicago.edu/research/roots-of-linguistic-identity) and [this one](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238609&HistoricalAwards=false)). We have a long training process with very specific conventions for things like what to transcribe and what to ignore, how to use contractions like "wanna", how to indicate things like laughter and crying, and so on. But that's WAY too much for your current task. Right now I would only like to get a preliminary impression of how you would use ELAN to generate a simple transcript.
 
 While we have existing workflows for setting up transcription documents and completing transcription, an important part of the lab manager's job is experimenting with and then documenting best ways to adapt those workflows for new projects. For example, you might take the instructions and training materials from the [ACLEW project](https://osf.io/b2jep/wiki/home/) and create a minimal version for a student to use on a specific pilot dataset they will work on. So imagine this as a moment when you're experimenting with a best way to do transcription for a new project.
 
@@ -83,7 +83,7 @@ A satisfaction solution is an ELAN file that has, minimally, one tier for each s
 * Make your onset and offset boundaries reasonably accurate:
   * When I play each of your utterance annotations individually, I shouldn't hear silence preceding/following the transcribed speech for that annotation
   * When I play each of your utterance annotations there shouldn't be cut off parts of the transcribed speech at the start or end 
-* Nonlinguistic infant vocalizations can be transcribed as "0."
+* Nonlinguistic infant vocalizations can be transcribed as "0." (the period there is part of the transcription)
 * It's up to you whether you want to transcribe other nonlinguistic, yet communicative behaviors, such as laughter
 * Feel free to add further tiers as desired (e.g., comments, addressee, etc.)
 * Generally, high systematicity is valued over high detail, but transcriptions with _both_ features are ideal
